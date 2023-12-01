@@ -18,7 +18,9 @@ body {
     font-family: 'Lato', sans-serif;
 }
 
-h1, h2, h3 {
+h1,
+h2,
+h3 {
     font-family: 'Oswald', sans-serif;
     text-transform: uppercase;
     letter-spacing: 2px;
@@ -109,15 +111,15 @@ main {
     padding-left: 10px;
 }
 
-#cover-text > h2, #cover-text > h3 {
+#cover-text>h2,
+#cover-text>h3 {
     color: #ffffff;
 }
 
-/* Reasons */
-
+/* Reasons section */
 #reasons {
     width: 90%;
-    margin: 20% auto;
+    margin: 20px auto;
 }
 
 #reasons h2 {
@@ -136,15 +138,15 @@ main {
     padding: 0 20px;
 }
 
-hr {
+#benefits hr {
     border-top: 1px solid #3a3a3a;
     margin: 5px 0;
 }
 
 #circle-cover-bg {
-    background: url("../images/reasons-image.webp") no-repeat top / cover;
-    width: 90vw; 
+    background: url('../images/reasons-image.webp') no-repeat top center / cover;
     height: 90vw;
+    width: 90vw;
     margin-bottom: 20px;
     /* Makes the square image into a circle */
     border-radius: 50%;
@@ -216,19 +218,19 @@ hr {
     }
 
     /* Reasons section */
-    #benefits-phisical,
+    #benefits-physical,
     #benefits-mental {
         display: flex;
         flex-direction: column;
         width: 100%;
     }
 
-    #benefits-phisical>div,
+    #benefits-physical>div,
     #benefits-mental>div {
         width: 75%;
     }
 
-    #benefits-mental > div {
+    #benefits-mental>div {
         text-align: end;
         align-self: flex-end;
     }
@@ -241,8 +243,8 @@ hr {
     }
 }
 
-/* XL devices (large laptops and large desktops, 1200px and up) */
 @media screen and (min-width: 1200px) {
+    /* Reasons section */
     #benefits {
         display: flex;
         flex-direction: row;
@@ -259,11 +261,11 @@ hr {
     #benefits-mental {
         order: 1;
     }
-    
+
     #benefits-mental > div {
         align-self: flex-start;
     }
-    
+
     #benefits-phisical > div {
         align-self: flex-end;
     }
