@@ -18,7 +18,6 @@ body {
     font-family: 'Lato', sans-serif;
 }
 
-
 /* Header */
 header {
     background-color: #ffffff;
@@ -55,7 +54,7 @@ h1 {
 }
 
 .active {
-    border-bottom: 1px solid #3a3a3a; 
+    border-bottom: 1px solid #3a3a3a;
 }
 
 /* Navbar styles with dropdown toggle */
@@ -94,4 +93,29 @@ main {
 /* Footer */
 footer {
     background-color: orange;
+}
+
+/* Media query: tablets and larger (768px and up) */
+@media screen and (min-width: 768px) {
+    /* Header */
+    nav {
+        display: block;
+        position: relative;
+        box-shadow: none;
+        width: fit-content;
+        padding-right: 1rem;
+    }
+
+    #menu {
+        display: flex;
+    }
+
+    #menu > li {
+        padding-left: 1rem;
+    }
+
+    .nav-toggle-label {
+        display: none;
+    }
+    
 }
